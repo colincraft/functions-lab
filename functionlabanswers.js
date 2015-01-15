@@ -1,5 +1,7 @@
 ////Function Labs 1.14.15
 
+//Forgot number 3, last bonus is wrong.
+
 ///for loop
 var arr = [1,2,3,4,5];
 
@@ -34,6 +36,21 @@ maxOfTwoNumbers(2, 5)
 
 maxOfThreeNumbers(5, 3, 6)
 
+//takes a character and returns a vowel.
+
+
+function isVowel(char) {
+    var vowels = ["a", "e", "i", "o", "u"];
+
+    for(i = 0; i < vowels.length; i++){
+        if (vowels[i] == char.toLowerCase()){
+            return true;
+        }
+    }
+    return false;
+}
+
+
 //sum of arrays
 
 	var total = 0
@@ -44,6 +61,9 @@ maxOfThreeNumbers(5, 3, 6)
 
 	//For each number in the array, the number will add itself to the total variable.
 	// x += y is the same as x = x+ y
+
+
+
 
 ///Muliply Arrays
 
@@ -81,19 +101,18 @@ maxOfThreeNumbers(5, 3, 6)
 
 ////filterLongWords
 
-	var words = ["Harold", "hen", "asdasda"];
 
-	var i = 5
-	words.sort(function filterLongWords(x , i){
-		if (words[x].length > i){
-			return words[x];
-		}
-		else {
-			console.log("You have no words longer than the number " + i + ".");
-		}
-	});	
+function filterLongWords(array, num) {
+    var str = [];
+    for(i = 0; i < array.length; i++) {
+        if (array[i].length > num) {
+            str.push(array[i])
+        }
+    }
+    return str;
+}
 
-
+str = ["ljkdnalksnd", "ljasbdlas", "sda"]
 
 
 
